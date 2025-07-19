@@ -1,0 +1,46 @@
+2025-07-17 16:43:50,178 - INFO - Training session started
+2025-07-17 16:44:00,712 - INFO - [Epoch 1] Train Loss: 1.3749 | Val Loss: 1.7690 | Val Acc: 0.4000
+2025-07-17 16:44:00,818 - INFO - Saved improved model to ./saved_models/baldsight_best_20250717_164400.pth
+2025-07-17 16:44:01,989 - INFO - [Epoch 2] Train Loss: 0.3728 | Val Loss: 1.7947 | Val Acc: 0.0000
+2025-07-17 16:44:03,173 - INFO - [Epoch 3] Train Loss: 0.2248 | Val Loss: 1.8369 | Val Acc: 0.0000
+2025-07-17 16:44:04,303 - INFO - [Epoch 4] Train Loss: 0.1247 | Val Loss: 1.8114 | Val Acc: 0.0000
+2025-07-17 16:44:05,461 - INFO - [Epoch 5] Train Loss: 0.1251 | Val Loss: 1.8137 | Val Acc: 0.4000
+2025-07-17 16:44:06,615 - INFO - [Epoch 6] Train Loss: 0.0653 | Val Loss: 1.7566 | Val Acc: 0.4000
+2025-07-17 16:44:06,724 - INFO - Saved improved model to ./saved_models/baldsight_best_20250717_164406.pth
+2025-07-17 16:44:07,871 - INFO - [Epoch 7] Train Loss: 0.0701 | Val Loss: 1.7884 | Val Acc: 0.4000
+2025-07-17 16:44:09,062 - INFO - [Epoch 8] Train Loss: 0.0204 | Val Loss: 1.7174 | Val Acc: 0.4000
+2025-07-17 16:44:09,182 - INFO - Saved improved model to ./saved_models/baldsight_best_20250717_164409.pth
+2025-07-17 16:44:10,353 - INFO - [Epoch 9] Train Loss: 0.0175 | Val Loss: 1.7175 | Val Acc: 0.4000
+2025-07-17 16:44:11,507 - INFO - [Epoch 10] Train Loss: 0.0592 | Val Loss: 1.5866 | Val Acc: 0.4000
+2025-07-17 16:44:11,620 - INFO - Saved improved model to ./saved_models/baldsight_best_20250717_164411.pth
+2025-07-17 16:44:12,769 - INFO - [Epoch 11] Train Loss: 0.0107 | Val Loss: 1.5428 | Val Acc: 0.6000
+2025-07-17 16:44:12,880 - INFO - Saved improved model to ./saved_models/baldsight_best_20250717_164412.pth
+2025-07-17 16:44:14,027 - INFO - [Epoch 12] Train Loss: 0.0089 | Val Loss: 1.5253 | Val Acc: 0.6000
+2025-07-17 16:44:14,178 - INFO - Saved improved model to ./saved_models/baldsight_best_20250717_164414.pth
+2025-07-17 16:44:15,331 - INFO - [Epoch 13] Train Loss: 0.0310 | Val Loss: 1.4645 | Val Acc: 0.6000
+2025-07-17 16:44:15,440 - INFO - Saved improved model to ./saved_models/baldsight_best_20250717_164415.pth
+2025-07-17 16:44:16,580 - INFO - [Epoch 14] Train Loss: 0.0912 | Val Loss: 1.3850 | Val Acc: 0.2000
+2025-07-17 16:44:16,686 - INFO - Saved improved model to ./saved_models/baldsight_best_20250717_164416.pth
+2025-07-17 16:44:17,821 - INFO - [Epoch 15] Train Loss: 0.0898 | Val Loss: 1.2742 | Val Acc: 0.2000
+2025-07-17 16:44:17,940 - INFO - Saved improved model to ./saved_models/baldsight_best_20250717_164417.pth
+2025-07-17 16:44:19,102 - INFO - [Epoch 16] Train Loss: 0.0357 | Val Loss: 1.2200 | Val Acc: 0.4000
+2025-07-17 16:44:19,232 - INFO - Saved improved model to ./saved_models/baldsight_best_20250717_164419.pth
+2025-07-17 16:44:20,374 - INFO - [Epoch 17] Train Loss: 0.1532 | Val Loss: 1.1004 | Val Acc: 0.6000
+2025-07-17 16:44:20,496 - INFO - Saved improved model to ./saved_models/baldsight_best_20250717_164420.pth
+2025-07-17 16:44:21,643 - INFO - [Epoch 18] Train Loss: 0.0292 | Val Loss: 1.0724 | Val Acc: 0.6000
+2025-07-17 16:44:21,798 - INFO - Saved improved model to ./saved_models/baldsight_best_20250717_164421.pth
+2025-07-17 16:44:22,977 - INFO - [Epoch 19] Train Loss: 0.0221 | Val Loss: 1.1049 | Val Acc: 0.6000
+2025-07-17 16:44:24,179 - INFO - [Epoch 20] Train Loss: 0.0189 | Val Loss: 1.1236 | Val Acc: 0.6000
+2025-07-17 16:44:24,194 - INFO - 
+              precision    recall  f1-score   support
+
+      stage1       0.00      0.00      0.00         1
+      stage2       0.50      1.00      0.67         1
+      stage3       1.00      0.50      0.67         2
+      stage4       1.00      1.00      1.00         1
+      stage5       0.00      0.00      0.00         0
+
+    accuracy                           0.60         5
+   macro avg       0.50      0.50      0.47         5
+weighted avg       0.70      0.60      0.60         5
+
