@@ -4,13 +4,13 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-# Configure API key
+# API key
 genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 
-# List all available models
+# LISTING ALL THE MODELS AVAILABLE WITH THE API KEY
 models = genai.list_models()
 
-print("✅ Available Gemini Models:")
+print(" Available Gemini Models:")
 for model in models:
     print(f"- {model.name} (supports: {model.supported_generation_methods})")
 
