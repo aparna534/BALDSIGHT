@@ -1,4 +1,3 @@
-# ------------------ Imports ------------------
 import os
 import torch
 import torch.nn.functional as F
@@ -8,18 +7,17 @@ import streamlit as st
 import google.generativeai as genai
 from dotenv import load_dotenv
 
-# ------------------ Streamlit config MUST come first ------------------
 st.set_page_config(page_title="BaldSight", layout="wide")
 
-# ------------------ Load environment variables ------------------
+# Environment variables
 load_dotenv()
 api_key = os.getenv("GEMINI_API_KEY")
 genai.configure(api_key=api_key)
 
-# ------------------ Load Gemini model ------------------
+# Load Gemini model 
 gemini_model = genai.GenerativeModel("models/gemini-1.5-pro")
 
-# ------------------ Load PyTorch model ------------------
+#  PyTorch  
 @st.cache_resource
 def load_trained_model():
     model = torch.hub.load("pytorch/vision", "resnet18", weights=None)
@@ -30,7 +28,7 @@ def load_trained_model():
 
 model = load_trained_model()
 
-# ------------------ Prediction ------------------
+#  Prediction 
 def predict_stage(image):
     transform = transforms.Compose([
         transforms.Resize((224, 224)),
@@ -48,14 +46,14 @@ def predict_stage(image):
             confidence_message += " (low confidence)"
         return stage_message, confidence_message
 
-# ------------------ Text-based Gemini stage mapping ------------------
+# Mapping
 def get_stage_from_text(text):
     prompt = f"""Based on the following user description of their hair loss, identify the Norwood scale baldness stage (0 to 4). Just return the stage number.
 Description: {text}"""
     response = gemini_model.generate_content(prompt)
     return response.text.strip()
 
-# ------------------ Sidebar ------------------
+#  Sidebar 
 with st.sidebar:
     st.markdown("### About BaldSight")
     st.markdown(
@@ -69,11 +67,11 @@ with st.sidebar:
         """
     )
 
-# ------------------ Main UI ------------------
+# UI
 st.markdown("<h1 style='text-align: center;'>BALDSIGHT</h1>", unsafe_allow_html=True)
 st.markdown("<h4 style='text-align: center; color: gray;'>AI-Powered Baldness Stage Detection</h4>", unsafe_allow_html=True)
 
-# ---------- Image Upload ----------
+# Image Upload
 st.subheader("Upload a scalp image")
 uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
 
@@ -84,7 +82,7 @@ if uploaded_file:
     st.success(stage)
     st.info(confidence)
 
-# ---------- Text Input ----------
+# Text Input 
 st.subheader("Or describe your hair loss")
 text_input = st.text_input("Enter a description of your hair loss:")
 
