@@ -9,7 +9,7 @@ from collections import OrderedDict
 import os
 
 # Settings
-NUM_CLASSES = 5  # Update if you changed this
+NUM_CLASSES = 5  
 MODEL_PATH = "saved_models/baldsight_best_20250717_164421.pth"
 CLASS_NAMES = ['stage1', 'stage2', 'stage3', 'stage4', 'stage5']
 
