@@ -18,7 +18,7 @@ A multimodal diagnostic assistant that predicts Norwood stage from scalp images 
 
 **BaldSight** is a hybrid deep learning application that combines computer vision and large language model (LLM) capabilities to estimate the stage of male pattern baldness using either:
 
-- A **scalp image**, or  
+- A **scalp image**
 - A **natural language description** of hair loss patterns.
 
 Built for accessibility and real-world applicability, BaldSight helps users self-assess hair loss stages and understand their condition with higher confidence.
